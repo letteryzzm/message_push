@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.vc_push</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <!-- 替换为你的 Python 路径，运行 `which python3` 或 `which python` 查看 -->
+        <string>/usr/bin/python3</string>
+        <string>/Users/lettery/Documents/code/messge_push/main.py</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/lettery/Documents/code/messge_push</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>8</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/tmp/vc_push.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/tmp/vc_push_error.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
